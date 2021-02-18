@@ -3,7 +3,12 @@ import sys
 
 # The to do list 
 todo_list = []
+routine = "1: Add a task \n2: View List \n3: Exit"
+
 # Asks the user what they want to do
+def choices(name):
+    print("Choose a mode to enter {}.\n{}".format(name, routine))
+
 
             
 # The loop to add stuff to the to do list
@@ -13,5 +18,7 @@ todo_list = []
 # It will print the to do list
 
 
-# Calls the choice
-
+# Calls the choice and asks the persons name
+name = input("What is your name? ")
+print("Hello {}!".format(name))
+choices(name)
